@@ -5,8 +5,8 @@ def total_salary(path):
             for line in file:
                 line = line.strip().split(",")
                 lst.append(int(line[1]))
-                total = sum(lst)
-                average = total//len(lst)
+            total = sum(lst)
+            average = total//len(lst)
             return total, average
     
    
