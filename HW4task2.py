@@ -1,6 +1,6 @@
 def get_cats_info(path):
     try:
-        with open("cat_info.txt","r") as file:
+        with open(path,"r") as file:
             cat = []
             for info in file:
                 info = info.strip().split(",")
