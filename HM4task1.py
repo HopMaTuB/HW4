@@ -3,11 +3,11 @@ def total_salary(path):
         with open(path, 'r') as file:
             lst = []
             for line in file:
-                line = line.split(",")
+                line = line.strip().split(",")
                 lst.append(int(line[1]))
                 total = sum(lst)
-                average = total//2
-                return total, average
+                average = total//len(lst)
+            return total, average
     
    
     except FileNotFoundError:
